@@ -7,6 +7,8 @@ namespace login2
 {
     public partial class Form1 : Form
     {
+
+      
         
         private string cadenaConexion;
         private OleDbConnection cnn;
@@ -77,6 +79,12 @@ namespace login2
             {
                 MessageBox.Show($"Error al guardar el registro: {ex.Message}");
             }
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            login loginForm = new login();
+            loginForm.Show();
         }
     }
 }
