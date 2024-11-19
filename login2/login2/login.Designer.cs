@@ -33,75 +33,81 @@
             this.label3 = new System.Windows.Forms.Label();
             this.txtContraseña = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.linkLabelResetPassword = new System.Windows.Forms.LinkLabel();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.ForeColor = System.Drawing.Color.DarkBlue;
-            this.label1.Location = new System.Drawing.Point(71, 64);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(53, 52);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(127, 16);
+            this.label1.Size = new System.Drawing.Size(100, 13);
             this.label1.TabIndex = 6;
             this.label1.Text = "Nombre De Usuario";
             // 
             // txtNombre
             // 
-            this.txtNombre.Location = new System.Drawing.Point(53, 82);
-            this.txtNombre.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtNombre.Location = new System.Drawing.Point(40, 67);
+            this.txtNombre.Margin = new System.Windows.Forms.Padding(2);
             this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(167, 22);
+            this.txtNombre.Size = new System.Drawing.Size(126, 20);
             this.txtNombre.TabIndex = 5;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.ForeColor = System.Drawing.Color.DarkBlue;
-            this.label3.Location = new System.Drawing.Point(101, 129);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Location = new System.Drawing.Point(76, 105);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(76, 16);
+            this.label3.Size = new System.Drawing.Size(61, 13);
             this.label3.TabIndex = 8;
             this.label3.Text = "Contraseña";
             // 
             // txtContraseña
             // 
-            this.txtContraseña.Location = new System.Drawing.Point(53, 148);
-            this.txtContraseña.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtContraseña.Location = new System.Drawing.Point(40, 120);
+            this.txtContraseña.Margin = new System.Windows.Forms.Padding(2);
             this.txtContraseña.Name = "txtContraseña";
-            this.txtContraseña.Size = new System.Drawing.Size(167, 22);
+            this.txtContraseña.Size = new System.Drawing.Size(126, 20);
             this.txtContraseña.TabIndex = 7;
+            this.txtContraseña.PasswordChar = '*';
             // 
             // button1
             // 
-            this.button1.ForeColor = System.Drawing.Color.DarkBlue;
-            this.button1.Location = new System.Drawing.Point(53, 202);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button1.Location = new System.Drawing.Point(40, 164);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(168, 37);
+            this.button1.Size = new System.Drawing.Size(126, 30);
             this.button1.TabIndex = 9;
             this.button1.Text = "Iniciar Sesion";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // linkLabelResetPassword
+            // 
+            this.linkLabelResetPassword.AutoSize = true;
+            this.linkLabelResetPassword.Location = new System.Drawing.Point(40, 207);
+            this.linkLabelResetPassword.Name = "linkLabelResetPassword";
+            this.linkLabelResetPassword.Size = new System.Drawing.Size(113, 13);
+            this.linkLabelResetPassword.TabIndex = 10;
+            this.linkLabelResetPassword.TabStop = true;
+            this.linkLabelResetPassword.Text = "Restablecer contraseña";
+            this.linkLabelResetPassword.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.LinkLabelReset_LinkClicked);
+            // 
             // login
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.LightGray;
-            this.ClientSize = new System.Drawing.Size(275, 278);
+            this.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.ClientSize = new System.Drawing.Size(206, 240);
+            this.Controls.Add(this.linkLabelResetPassword);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.txtContraseña);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtNombre);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "login";
             this.Text = "login";
             this.ResumeLayout(false);
             this.PerformLayout();
-
         }
 
         #endregion
@@ -111,5 +117,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtContraseña;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.LinkLabel linkLabelResetPassword;
     }
 }
