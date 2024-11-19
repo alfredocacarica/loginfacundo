@@ -2,7 +2,6 @@
 using System.Data;
 using System.Data.OleDb;
 using System.Windows.Forms;
-using static System.Runtime.CompilerServices.RuntimeHelpers;
 
 namespace login2
 {
@@ -14,7 +13,10 @@ namespace login2
         {
             InitializeComponent();
             cadenaConexion = conexion;
+            txtCode.Enabled = false; // Deshabilitar el TextBox de código inicialmente
         }
+
+        
 
         private void btnReset_Click(object sender, EventArgs e)
         {
@@ -95,6 +97,29 @@ namespace login2
             {
                 MessageBox.Show($"Error al actualizar la contraseña: {ex.Message}");
                 return false;
+            }
+        }
+
+        private void btnVerificarEmail_Click(object sender, EventArgs e)
+        {
+            {
+                string email = txtEmail.Text;
+
+                if (string.IsNullOrEmpty(email))
+                {
+                    MessageBox.Show("Por favor, ingrese su email.");
+                    return;
+                }
+
+                if (ValidarEmail(email))
+                {
+                    txtCode.Enabled = true; // Habilitar el TextBox de código
+                    MessageBox.Show("Email verificado, ahora puede ingresar el código.");
+                }
+                else
+                {
+                    MessageBox.Show("El email no existe en la base de datos.");
+                }
             }
         }
     }
