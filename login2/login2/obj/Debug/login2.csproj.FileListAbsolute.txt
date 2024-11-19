@@ -21,3 +21,15 @@ C:\Users\sebas\OneDrive\Documentos\GitHub\loginfacundo\login2\login2\obj\Debug\l
 C:\Users\sebas\OneDrive\Documentos\GitHub\loginfacundo\login2\login2\obj\Debug\login2.exe
 C:\Users\sebas\OneDrive\Documentos\GitHub\loginfacundo\login2\login2\obj\Debug\login2.pdb
 C:\Users\sebas\OneDrive\Documentos\GitHub\loginfacundo\login2\login2\obj\Debug\login2.login.resources
+C:\Users\alfre\OneDrive\Escritorio\Ahorcado\Ahorcado\loginfacundo\login2\login2\bin\Debug\login.accdb
+C:\Users\alfre\OneDrive\Escritorio\Ahorcado\Ahorcado\loginfacundo\login2\login2\bin\Debug\login2.exe.config
+C:\Users\alfre\OneDrive\Escritorio\Ahorcado\Ahorcado\loginfacundo\login2\login2\bin\Debug\login2.exe
+C:\Users\alfre\OneDrive\Escritorio\Ahorcado\Ahorcado\loginfacundo\login2\login2\bin\Debug\login2.pdb
+C:\Users\alfre\OneDrive\Escritorio\Ahorcado\Ahorcado\loginfacundo\login2\login2\obj\Debug\login2.csproj.AssemblyReference.cache
+C:\Users\alfre\OneDrive\Escritorio\Ahorcado\Ahorcado\loginfacundo\login2\login2\obj\Debug\login2.Form1.resources
+C:\Users\alfre\OneDrive\Escritorio\Ahorcado\Ahorcado\loginfacundo\login2\login2\obj\Debug\login2.login.resources
+C:\Users\alfre\OneDrive\Escritorio\Ahorcado\Ahorcado\loginfacundo\login2\login2\obj\Debug\login2.Properties.Resources.resources
+C:\Users\alfre\OneDrive\Escritorio\Ahorcado\Ahorcado\loginfacundo\login2\login2\obj\Debug\login2.csproj.GenerateResource.cache
+C:\Users\alfre\OneDrive\Escritorio\Ahorcado\Ahorcado\loginfacundo\login2\login2\obj\Debug\login2.csproj.CoreCompileInputs.cache
+C:\Users\alfre\OneDrive\Escritorio\Ahorcado\Ahorcado\loginfacundo\login2\login2\obj\Debug\login2.exe
+C:\Users\alfre\OneDrive\Escritorio\Ahorcado\Ahorcado\loginfacundo\login2\login2\obj\Debug\login2.pdb
