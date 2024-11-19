@@ -3,19 +3,27 @@
   "WorkspaceRootPath": "C:\\Users\\alfre\\OneDrive\\Escritorio\\Ahorcado\\Ahorcado\\loginfacundo\\login2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{15F6D729-620A-40CF-8881-5B34C5134152}|login2\\login2.csproj|C:\\Users\\alfre\\OneDrive\\Escritorio\\Ahorcado\\Ahorcado\\loginfacundo\\login2\\login2\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{15F6D729-620A-40CF-8881-5B34C5134152}|login2\\login2.csproj|solutionrelative:login2\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{15F6D729-620A-40CF-8881-5B34C5134152}|login2\\login2.csproj|c:\\users\\alfre\\onedrive\\escritorio\\ahorcado\\ahorcado\\loginfacundo\\login2\\login2\\resetpasswordform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15F6D729-620A-40CF-8881-5B34C5134152}|login2\\login2.csproj|solutionrelative:login2\\resetpasswordform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{15F6D729-620A-40CF-8881-5B34C5134152}|login2\\login2.csproj|C:\\Users\\alfre\\OneDrive\\Escritorio\\Ahorcado\\Ahorcado\\loginfacundo\\login2\\login2\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{15F6D729-620A-40CF-8881-5B34C5134152}|login2\\login2.csproj|solutionrelative:login2\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{15F6D729-620A-40CF-8881-5B34C5134152}|login2\\login2.csproj|c:\\users\\alfre\\onedrive\\escritorio\\ahorcado\\ahorcado\\loginfacundo\\login2\\login2\\resetpasswordform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{15F6D729-620A-40CF-8881-5B34C5134152}|login2\\login2.csproj|solutionrelative:login2\\resetpasswordform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{15F6D729-620A-40CF-8881-5B34C5134152}|login2\\login2.csproj|C:\\Users\\alfre\\OneDrive\\Escritorio\\Ahorcado\\Ahorcado\\loginfacundo\\login2\\login2\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{15F6D729-620A-40CF-8881-5B34C5134152}|login2\\login2.csproj|solutionrelative:login2\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{15F6D729-620A-40CF-8881-5B34C5134152}|login2\\login2.csproj|c:\\users\\alfre\\onedrive\\escritorio\\ahorcado\\ahorcado\\loginfacundo\\login2\\login2\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{15F6D729-620A-40CF-8881-5B34C5134152}|login2\\login2.csproj|C:\\Users\\alfre\\OneDrive\\Escritorio\\Ahorcado\\Ahorcado\\loginfacundo\\login2\\login2\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15F6D729-620A-40CF-8881-5B34C5134152}|login2\\login2.csproj|solutionrelative:login2\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15F6D729-620A-40CF-8881-5B34C5134152}|login2\\login2.csproj|c:\\users\\alfre\\onedrive\\escritorio\\ahorcado\\ahorcado\\loginfacundo\\login2\\login2\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{15F6D729-620A-40CF-8881-5B34C5134152}|login2\\login2.csproj|solutionrelative:login2\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15F6D729-620A-40CF-8881-5B34C5134152}|login2\\login2.csproj|C:\\Users\\alfre\\OneDrive\\Escritorio\\Ahorcado\\Ahorcado\\loginfacundo\\login2\\login2\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{15F6D729-620A-40CF-8881-5B34C5134152}|login2\\login2.csproj|solutionrelative:login2\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -26,11 +34,36 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
+              "Title": "ResetPasswordForm.cs",
+              "DocumentMoniker": "C:\\Users\\alfre\\OneDrive\\Escritorio\\Ahorcado\\Ahorcado\\loginfacundo\\login2\\login2\\ResetPasswordForm.cs",
+              "RelativeDocumentMoniker": "login2\\ResetPasswordForm.cs",
+              "ToolTip": "C:\\Users\\alfre\\OneDrive\\Escritorio\\Ahorcado\\Ahorcado\\loginfacundo\\login2\\login2\\ResetPasswordForm.cs",
+              "RelativeToolTip": "login2\\ResetPasswordForm.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-19T15:58:07.174Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ResetPasswordForm.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\alfre\\OneDrive\\Escritorio\\Ahorcado\\Ahorcado\\loginfacundo\\login2\\login2\\ResetPasswordForm.cs",
+              "RelativeDocumentMoniker": "login2\\ResetPasswordForm.cs",
+              "ToolTip": "C:\\Users\\alfre\\OneDrive\\Escritorio\\Ahorcado\\Ahorcado\\loginfacundo\\login2\\login2\\ResetPasswordForm.cs [Dise\u00F1o]",
+              "RelativeToolTip": "login2\\ResetPasswordForm.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-19T15:57:57.203Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "login.cs",
               "DocumentMoniker": "C:\\Users\\alfre\\OneDrive\\Escritorio\\Ahorcado\\Ahorcado\\loginfacundo\\login2\\login2\\login.cs",
               "RelativeDocumentMoniker": "login2\\login.cs",
@@ -55,7 +88,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Form1.cs",
               "DocumentMoniker": "C:\\Users\\alfre\\OneDrive\\Escritorio\\Ahorcado\\Ahorcado\\loginfacundo\\login2\\login2\\Form1.cs",
               "RelativeDocumentMoniker": "login2\\Form1.cs",
@@ -68,7 +101,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "Form1.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\alfre\\OneDrive\\Escritorio\\Ahorcado\\Ahorcado\\loginfacundo\\login2\\login2\\Form1.cs",
               "RelativeDocumentMoniker": "login2\\Form1.cs",
