@@ -48,7 +48,7 @@
             // 
             // txtEmail
             // 
-            this.txtEmail.Location = new System.Drawing.Point(100, 12);
+            this.txtEmail.Location = new System.Drawing.Point(117, 15);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(200, 20);
             this.txtEmail.TabIndex = 1;
@@ -58,13 +58,13 @@
             this.lblCode.AutoSize = true;
             this.lblCode.Location = new System.Drawing.Point(12, 50);
             this.lblCode.Name = "lblCode";
-            this.lblCode.Size = new System.Drawing.Size(41, 13);
+            this.lblCode.Size = new System.Drawing.Size(43, 13);
             this.lblCode.TabIndex = 2;
             this.lblCode.Text = "Código:";
             // 
             // txtCode
             // 
-            this.txtCode.Location = new System.Drawing.Point(100, 47);
+            this.txtCode.Location = new System.Drawing.Point(117, 43);
             this.txtCode.Name = "txtCode";
             this.txtCode.Size = new System.Drawing.Size(200, 20);
             this.txtCode.TabIndex = 3;
@@ -74,13 +74,13 @@
             this.lblNewPassword.AutoSize = true;
             this.lblNewPassword.Location = new System.Drawing.Point(12, 85);
             this.lblNewPassword.Name = "lblNewPassword";
-            this.lblNewPassword.Size = new System.Drawing.Size(81, 13);
+            this.lblNewPassword.Size = new System.Drawing.Size(99, 13);
             this.lblNewPassword.TabIndex = 4;
             this.lblNewPassword.Text = "Nueva Contraseña:";
             // 
             // txtNewPassword
             // 
-            this.txtNewPassword.Location = new System.Drawing.Point(100, 82);
+            this.txtNewPassword.Location = new System.Drawing.Point(117, 82);
             this.txtNewPassword.Name = "txtNewPassword";
             this.txtNewPassword.PasswordChar = '*';
             this.txtNewPassword.Size = new System.Drawing.Size(200, 20);
@@ -100,7 +100,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(324, 171);
+            this.ClientSize = new System.Drawing.Size(351, 171);
             this.Controls.Add(this.btnReset);
             this.Controls.Add(this.txtNewPassword);
             this.Controls.Add(this.lblNewPassword);
@@ -112,6 +112,7 @@
             this.Text = "Restablecer Contraseña";
             this.ResumeLayout(false);
             this.PerformLayout();
+
         }
 
         #endregion

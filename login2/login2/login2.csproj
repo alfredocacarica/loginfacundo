@@ -38,7 +38,11 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System">
+<<<<<<< Updated upstream
       <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.dll</HintPath>
+=======
+      <HintPath>..\..\..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.dll</HintPath>
+>>>>>>> Stashed changes
     </Reference>
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
