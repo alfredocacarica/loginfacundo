@@ -33,6 +33,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.txtContraseña = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.linkLabelResetPassword = new System.Windows.Forms.LinkLabel();
             this.SuspendLayout();
             // 
             // label1
@@ -68,6 +69,7 @@
             this.txtContraseña.Name = "txtContraseña";
             this.txtContraseña.Size = new System.Drawing.Size(126, 20);
             this.txtContraseña.TabIndex = 7;
+            this.txtContraseña.PasswordChar = '*';
             // 
             // button1
             // 
@@ -79,12 +81,24 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // linkLabelResetPassword
+            // 
+            this.linkLabelResetPassword.AutoSize = true;
+            this.linkLabelResetPassword.Location = new System.Drawing.Point(40, 207);
+            this.linkLabelResetPassword.Name = "linkLabelResetPassword";
+            this.linkLabelResetPassword.Size = new System.Drawing.Size(113, 13);
+            this.linkLabelResetPassword.TabIndex = 10;
+            this.linkLabelResetPassword.TabStop = true;
+            this.linkLabelResetPassword.Text = "Restablecer contraseña";
+            this.linkLabelResetPassword.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.LinkLabelReset_LinkClicked);
+            // 
             // login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.ClientSize = new System.Drawing.Size(206, 226);
+            this.ClientSize = new System.Drawing.Size(206, 240);
+            this.Controls.Add(this.linkLabelResetPassword);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.txtContraseña);
@@ -94,7 +108,6 @@
             this.Text = "login";
             this.ResumeLayout(false);
             this.PerformLayout();
-
         }
 
         #endregion
@@ -104,5 +117,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtContraseña;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.LinkLabel linkLabelResetPassword;
     }
 }
