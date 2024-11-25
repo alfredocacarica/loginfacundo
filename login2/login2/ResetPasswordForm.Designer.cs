@@ -51,7 +51,7 @@
             // txtEmail
             // 
             this.txtEmail.Location = new System.Drawing.Point(156, 18);
-            this.txtEmail.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtEmail.Margin = new System.Windows.Forms.Padding(4);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(265, 22);
             this.txtEmail.TabIndex = 1;
@@ -69,7 +69,7 @@
             // txtCode
             // 
             this.txtCode.Location = new System.Drawing.Point(156, 53);
-            this.txtCode.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtCode.Margin = new System.Windows.Forms.Padding(4);
             this.txtCode.Name = "txtCode";
             this.txtCode.Size = new System.Drawing.Size(265, 22);
             this.txtCode.TabIndex = 3;
@@ -87,7 +87,7 @@
             // txtNewPassword
             // 
             this.txtNewPassword.Location = new System.Drawing.Point(156, 101);
-            this.txtNewPassword.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtNewPassword.Margin = new System.Windows.Forms.Padding(4);
             this.txtNewPassword.Name = "txtNewPassword";
             this.txtNewPassword.PasswordChar = '*';
             this.txtNewPassword.Size = new System.Drawing.Size(265, 22);
@@ -96,7 +96,7 @@
             // btnReset
             // 
             this.btnReset.Location = new System.Drawing.Point(133, 148);
-            this.btnReset.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnReset.Margin = new System.Windows.Forms.Padding(4);
             this.btnReset.Name = "btnReset";
             this.btnReset.Size = new System.Drawing.Size(267, 37);
             this.btnReset.TabIndex = 6;
@@ -127,8 +127,9 @@
             this.Controls.Add(this.lblCode);
             this.Controls.Add(this.txtEmail);
             this.Controls.Add(this.lblEmail);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "ResetPasswordForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Restablecer Contraseña";
             this.ResumeLayout(false);
             this.PerformLayout();

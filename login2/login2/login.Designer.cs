@@ -39,43 +39,46 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(53, 52);
+            this.label1.Location = new System.Drawing.Point(71, 64);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(100, 13);
+            this.label1.Size = new System.Drawing.Size(127, 16);
             this.label1.TabIndex = 6;
             this.label1.Text = "Nombre De Usuario";
             // 
             // txtNombre
             // 
-            this.txtNombre.Location = new System.Drawing.Point(40, 67);
-            this.txtNombre.Margin = new System.Windows.Forms.Padding(2);
+            this.txtNombre.Location = new System.Drawing.Point(53, 82);
+            this.txtNombre.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(126, 20);
+            this.txtNombre.Size = new System.Drawing.Size(167, 22);
             this.txtNombre.TabIndex = 5;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(76, 105);
+            this.label3.Location = new System.Drawing.Point(101, 129);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(61, 13);
+            this.label3.Size = new System.Drawing.Size(76, 16);
             this.label3.TabIndex = 8;
             this.label3.Text = "Contraseña";
             // 
             // txtContraseña
             // 
-            this.txtContraseña.Location = new System.Drawing.Point(40, 120);
-            this.txtContraseña.Margin = new System.Windows.Forms.Padding(2);
+            this.txtContraseña.Location = new System.Drawing.Point(53, 148);
+            this.txtContraseña.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtContraseña.Name = "txtContraseña";
-            this.txtContraseña.Size = new System.Drawing.Size(126, 20);
-            this.txtContraseña.TabIndex = 7;
             this.txtContraseña.PasswordChar = '*';
+            this.txtContraseña.Size = new System.Drawing.Size(167, 22);
+            this.txtContraseña.TabIndex = 7;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(40, 164);
+            this.button1.Location = new System.Drawing.Point(53, 202);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(126, 30);
+            this.button1.Size = new System.Drawing.Size(168, 37);
             this.button1.TabIndex = 9;
             this.button1.Text = "Iniciar Sesion";
             this.button1.UseVisualStyleBackColor = true;
@@ -84,9 +87,10 @@
             // linkLabelResetPassword
             // 
             this.linkLabelResetPassword.AutoSize = true;
-            this.linkLabelResetPassword.Location = new System.Drawing.Point(40, 207);
+            this.linkLabelResetPassword.Location = new System.Drawing.Point(53, 255);
+            this.linkLabelResetPassword.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.linkLabelResetPassword.Name = "linkLabelResetPassword";
-            this.linkLabelResetPassword.Size = new System.Drawing.Size(113, 13);
+            this.linkLabelResetPassword.Size = new System.Drawing.Size(151, 16);
             this.linkLabelResetPassword.TabIndex = 10;
             this.linkLabelResetPassword.TabStop = true;
             this.linkLabelResetPassword.Text = "Restablecer contraseña";
@@ -94,20 +98,25 @@
             // 
             // login
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.ClientSize = new System.Drawing.Size(206, 240);
+            this.ClientSize = new System.Drawing.Size(275, 295);
             this.Controls.Add(this.linkLabelResetPassword);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.txtContraseña);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtNombre);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "login";
+            this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "login";
             this.ResumeLayout(false);
             this.PerformLayout();
+
         }
 
         #endregion

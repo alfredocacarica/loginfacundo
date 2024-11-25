@@ -13,7 +13,7 @@ namespace login2
         {
             InitializeComponent();
             cadenaConexion = conexion;
-            txtCode.Enabled = false; // Deshabilitar el TextBox de código inicialmente
+            txtCode.Enabled = false; 
         }
 
         
@@ -101,6 +101,7 @@ namespace login2
         }
 
         private void btnVerificarEmail_Click(object sender, EventArgs e)
+
         {
             {
                 string email = txtEmail.Text;
@@ -111,9 +112,9 @@ namespace login2
                     return;
                 }
 
-                if (ValidarEmail(email))
+                if (ValidarEmail(email)) 
                 {
-                    txtCode.Enabled = true; // Habilitar el TextBox de código
+                    txtCode.Enabled = true; 
                     MessageBox.Show("Email verificado, ahora puede ingresar el código.");
                 }
                 else

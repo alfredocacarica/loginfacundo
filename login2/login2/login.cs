@@ -26,9 +26,9 @@ namespace login2
 
         private void LinkLabelReset_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            // Crear una instancia del formulario de restablecimiento de contraseña
+            
             ResetPasswordForm resetPasswordForm = new ResetPasswordForm(cadenaConexion);
-            // Mostrar el formulario de restablecimiento
+            
             resetPasswordForm.ShowDialog();
         }
 
