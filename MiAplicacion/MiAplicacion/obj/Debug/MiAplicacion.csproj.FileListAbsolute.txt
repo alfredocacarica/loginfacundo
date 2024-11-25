@@ -1,0 +1,9 @@
+C:\Users\Lucas\source\repos\MiAplicacion\MiAplicacion\bin\Debug\MiAplicacion.exe.config
+C:\Users\Lucas\source\repos\MiAplicacion\MiAplicacion\bin\Debug\MiAplicacion.exe
+C:\Users\Lucas\source\repos\MiAplicacion\MiAplicacion\bin\Debug\MiAplicacion.pdb
+C:\Users\Lucas\source\repos\MiAplicacion\MiAplicacion\obj\Debug\MiAplicacion.csproj.AssemblyReference.cache
+C:\Users\Lucas\source\repos\MiAplicacion\MiAplicacion\obj\Debug\MiAplicacion.Properties.Resources.resources
+C:\Users\Lucas\source\repos\MiAplicacion\MiAplicacion\obj\Debug\MiAplicacion.csproj.GenerateResource.cache
+C:\Users\Lucas\source\repos\MiAplicacion\MiAplicacion\obj\Debug\MiAplicacion.csproj.CoreCompileInputs.cache
+C:\Users\Lucas\source\repos\MiAplicacion\MiAplicacion\obj\Debug\MiAplicacion.exe
+C:\Users\Lucas\source\repos\MiAplicacion\MiAplicacion\obj\Debug\MiAplicacion.pdb
