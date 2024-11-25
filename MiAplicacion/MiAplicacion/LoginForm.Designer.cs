@@ -8,6 +8,7 @@
         private System.Windows.Forms.Button btnLogin;
         private System.Windows.Forms.Label lblEmail;
         private System.Windows.Forms.Label lblPassword;
+        private System.Windows.Forms.LinkLabel linkForgotPassword; // Declaración del LinkLabel
 
         protected override void Dispose(bool disposing)
         {
@@ -25,6 +26,7 @@
             this.btnLogin = new System.Windows.Forms.Button();
             this.lblEmail = new System.Windows.Forms.Label();
             this.lblPassword = new System.Windows.Forms.Label();
+            this.linkForgotPassword = new System.Windows.Forms.LinkLabel(); // Inicialización del LinkLabel
             this.SuspendLayout();
 
             // txtEmail
@@ -65,10 +67,21 @@
             this.lblPassword.TabIndex = 4;
             this.lblPassword.Text = "Password:";
 
+            // linkForgotPassword
+            this.linkForgotPassword.AutoSize = true;
+            this.linkForgotPassword.Location = new System.Drawing.Point(160, 150);
+            this.linkForgotPassword.Name = "linkForgotPassword";
+            this.linkForgotPassword.Size = new System.Drawing.Size(109, 13);
+            this.linkForgotPassword.TabIndex = 5;
+            this.linkForgotPassword.TabStop = true;
+            this.linkForgotPassword.Text = "Olvidé mi contraseña";
+            this.linkForgotPassword.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkForgotPassword_LinkClicked);
+
             // LoginForm
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(400, 200);
+            this.Controls.Add(this.linkForgotPassword); // Agregar el LinkLabel al formulario
             this.Controls.Add(this.lblPassword);
             this.Controls.Add(this.lblEmail);
             this.Controls.Add(this.btnLogin);

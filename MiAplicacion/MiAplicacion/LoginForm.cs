@@ -1,6 +1,6 @@
-﻿using System;
-using System.Data.OleDb;
+﻿using System.Data.OleDb;
 using System.Windows.Forms;
+using System;
 
 namespace MiAplicacion
 {
@@ -57,6 +57,13 @@ namespace MiAplicacion
                 MessageBox.Show($"Error al validar credenciales: {ex.Message}");
                 return false;
             }
+        }
+
+        private void linkForgotPassword_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            // Abrir el formulario ResetPasswordForm
+            ResetPasswordForm resetForm = new ResetPasswordForm();
+            resetForm.Show();
         }
     }
 }
