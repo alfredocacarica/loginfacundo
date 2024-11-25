@@ -48,6 +48,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ConexionDB.cs" />
+    <Compile Include="VerificationCodeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VerificationCodeForm.Designer.cs">
+      <DependentUpon>VerificationCodeForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="ResetPasswordForm.cs">
       <SubType>Form</SubType>
     </Compile>
