@@ -1,93 +1,74 @@
 ﻿using System;
-using System.Data;
 using System.Data.OleDb;
 using System.Windows.Forms;
 
 namespace login2
 {
-    public partial class ResetPasswordForm : Form
+    public partial class RegisterForm : Form
     {
-        private string cadenaConexion;
-
-        public ResetPasswordForm(string conexion)
+        public RegisterForm()
         {
             InitializeComponent();
-            cadenaConexion = conexion;
-            txtCode.Enabled = false; 
         }
 
-        
-
-        private void btnReset_Click(object sender, EventArgs e)
+        private void btnRegister_Click(object sender, EventArgs e)
         {
             string email = txtEmail.Text;
-            string code = txtCode.Text;
-            string newPassword = txtNewPassword.Text;
+            string username = txtUsername.Text;
+            string password = txtPassword.Text;
 
-            if (string.IsNullOrEmpty(email) || string.IsNullOrEmpty(code) || string.IsNullOrEmpty(newPassword))
+            // Validar que los campos no estén vacíos
+            if (string.IsNullOrEmpty(email) || string.IsNullOrEmpty(username) || string.IsNullOrEmpty(password))
             {
                 MessageBox.Show("Por favor, complete todos los campos.");
                 return;
             }
 
-            if (code != "123456")
+            // Validar formato de email
+            if (!ValidarFormatoEmail(email))
             {
-                MessageBox.Show("Código incorrecto.");
+                MessageBox.Show("Por favor, ingrese un email válido.");
                 return;
             }
 
-            if (!ValidarEmail(email))
+            // Registrar el usuario
+            if (RegistrarUsuario(email, username, password))
             {
-                MessageBox.Show("El email no existe en la base de datos.");
-                return;
-            }
-
-            if (ActualizarContraseña(email, newPassword))
-            {
-                MessageBox.Show("Contraseña actualizada con éxito.");
+                MessageBox.Show("Registro exitoso.");
                 this.Close();
             }
             else
             {
-                MessageBox.Show("Error al actualizar la contraseña.");
+                MessageBox.Show("Error al registrar el usuario. Por favor, intente nuevamente.");
             }
         }
 
-        private bool ValidarEmail(string email)
+        private bool ValidarFormatoEmail(string email)
         {
             try
             {
-                using (OleDbConnection cnn = new OleDbConnection(cadenaConexion))
-                {
-                    cnn.Open();
-                    string query = "SELECT COUNT(1) FROM Usuarios WHERE Email = @Email";
-                    using (OleDbCommand cmd = new OleDbCommand(query, cnn))
-                    {
-                        cmd.Parameters.AddWithValue("@Email", email);
-                        int count = (int)cmd.ExecuteScalar();
-                        return count == 1;
-                    }
-                }
+                var emailValidator = new System.Net.Mail.MailAddress(email);
+                return emailValidator.Address == email;
             }
-            catch (Exception ex)
+            catch
             {
-                MessageBox.Show($"Error al validar el email: {ex.Message}");
                 return false;
             }
         }
 
-        private bool ActualizarContraseña(string email, string nuevaContraseña)
+        private bool RegistrarUsuario(string email, string username, string password)
         {
             try
             {
-                using (OleDbConnection cnn = new OleDbConnection(cadenaConexion))
+                using (OleDbConnection cnn = new OleDbConnection("TU_CONEXION_AQUI"))
                 {
                     cnn.Open();
-                    string query = "UPDATE Usuarios SET Contraseña = @NuevaContraseña WHERE Email = @Email";
+                    string query = "INSERT INTO Usuarios (Email, Username, Contraseña) VALUES (@Email, @Username, @Password)";
                     using (OleDbCommand cmd = new OleDbCommand(query, cnn))
                     {
-                        cmd.Parameters.AddWithValue("@NuevaContraseña", nuevaContraseña);
                         cmd.Parameters.AddWithValue("@Email", email);
+                        cmd.Parameters.AddWithValue("@Username", username);
+                        cmd.Parameters.AddWithValue("@Password", password);
                         int filasAfectadas = cmd.ExecuteNonQuery();
                         return filasAfectadas > 0;
                     }
@@ -95,32 +76,8 @@ namespace login2
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Error al actualizar la contraseña: {ex.Message}");
+                MessageBox.Show($"Error al registrar usuario: {ex.Message}");
                 return false;
-            }
-        }
-
-        private void btnVerificarEmail_Click(object sender, EventArgs e)
-
-        {
-            {
-                string email = txtEmail.Text;
-
-                if (string.IsNullOrEmpty(email))
-                {
-                    MessageBox.Show("Por favor, ingrese su email.");
-                    return;
-                }
-
-                if (ValidarEmail(email)) 
-                {
-                    txtCode.Enabled = true; 
-                    MessageBox.Show("Email verificado, ahora puede ingresar el código.");
-                }
-                else
-                {
-                    MessageBox.Show("El email no existe en la base de datos.");
-                }
             }
         }
     }

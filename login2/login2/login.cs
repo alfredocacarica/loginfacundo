@@ -83,7 +83,7 @@ namespace login2
             this.Close();
 
           
-            Form1 form1 = new Form1();
+            RegisterForm form1 = new RegisterForm();
             form1.Show();
         }
 
