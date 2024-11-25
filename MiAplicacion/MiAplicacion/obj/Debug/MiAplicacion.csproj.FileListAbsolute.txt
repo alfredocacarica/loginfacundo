@@ -7,3 +7,12 @@ C:\Users\Lucas\source\repos\MiAplicacion\MiAplicacion\obj\Debug\MiAplicacion.csp
 C:\Users\Lucas\source\repos\MiAplicacion\MiAplicacion\obj\Debug\MiAplicacion.csproj.CoreCompileInputs.cache
 C:\Users\Lucas\source\repos\MiAplicacion\MiAplicacion\obj\Debug\MiAplicacion.exe
 C:\Users\Lucas\source\repos\MiAplicacion\MiAplicacion\obj\Debug\MiAplicacion.pdb
+C:\Users\alfre\OneDrive\Escritorio\Ahorcado\Ahorcado\loginfacundo\MiAplicacion\MiAplicacion\bin\Debug\MiAplicacion.exe.config
+C:\Users\alfre\OneDrive\Escritorio\Ahorcado\Ahorcado\loginfacundo\MiAplicacion\MiAplicacion\bin\Debug\MiAplicacion.exe
+C:\Users\alfre\OneDrive\Escritorio\Ahorcado\Ahorcado\loginfacundo\MiAplicacion\MiAplicacion\bin\Debug\MiAplicacion.pdb
+C:\Users\alfre\OneDrive\Escritorio\Ahorcado\Ahorcado\loginfacundo\MiAplicacion\MiAplicacion\obj\Debug\MiAplicacion.csproj.AssemblyReference.cache
+C:\Users\alfre\OneDrive\Escritorio\Ahorcado\Ahorcado\loginfacundo\MiAplicacion\MiAplicacion\obj\Debug\MiAplicacion.Properties.Resources.resources
+C:\Users\alfre\OneDrive\Escritorio\Ahorcado\Ahorcado\loginfacundo\MiAplicacion\MiAplicacion\obj\Debug\MiAplicacion.csproj.GenerateResource.cache
+C:\Users\alfre\OneDrive\Escritorio\Ahorcado\Ahorcado\loginfacundo\MiAplicacion\MiAplicacion\obj\Debug\MiAplicacion.csproj.CoreCompileInputs.cache
+C:\Users\alfre\OneDrive\Escritorio\Ahorcado\Ahorcado\loginfacundo\MiAplicacion\MiAplicacion\obj\Debug\MiAplicacion.exe
+C:\Users\alfre\OneDrive\Escritorio\Ahorcado\Ahorcado\loginfacundo\MiAplicacion\MiAplicacion\obj\Debug\MiAplicacion.pdb
