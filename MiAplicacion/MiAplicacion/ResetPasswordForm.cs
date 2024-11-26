@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Data.OleDb;
 using System.Windows.Forms;
-using static System.Runtime.CompilerServices.RuntimeHelpers;
 
 namespace MiAplicacion
 {
@@ -13,41 +12,50 @@ namespace MiAplicacion
         {
             InitializeComponent();
             cadenaConexion = conexion;
-            txtCode.Enabled = false;
         }
 
         private void btnResetPassword_Click(object sender, EventArgs e)
         {
             string email = txtEmail.Text;
             string newPassword = txtNewPassword.Text;
-            string confirmNewPassword = txtConfirmNewPassword.Text;
+            string confirmPassword = txtConfirmPassword.Text;
 
-            // Validar campos vacíos
-            if (string.IsNullOrEmpty(email) || string.IsNullOrEmpty(newPassword) || string.IsNullOrEmpty(confirmNewPassword))
+            if (string.IsNullOrEmpty(email) || string.IsNullOrEmpty(newPassword) || string.IsNullOrEmpty(confirmPassword))
             {
                 MessageBox.Show("Por favor, complete todos los campos.");
                 return;
             }
 
-            // Validar que las contraseñas coincidan
-            if (newPassword != confirmNewPassword)
+            if (newPassword != confirmPassword)
             {
-                MessageBox.Show("Las contraseñas no coinciden. Por favor, inténtelo de nuevo.");
+                MessageBox.Show("Las contraseñas no coinciden.");
                 return;
             }
 
-            // Actualizar contraseña
-            if (ActualizarContraseña(email, newPassword))
+            // Mostrar el formulario de verificación
+            using (VerificationCodeForm verificationForm = new VerificationCodeForm())
             {
-                MessageBox.Show("Contraseña actualizada con éxito.");
-                this.Close();
-            }
-            else
-            {
-                MessageBox.Show("Error al actualizar la contraseña. Verifique que el email exista.");
+                if (verificationForm.ShowDialog() == DialogResult.OK)
+                {
+                    if (verificationForm.IsCodeValid)
+                    {
+                        if (ActualizarContraseña(email, newPassword))
+                        {
+                            MessageBox.Show("Contraseña actualizada con éxito.");
+                            this.Close();
+                        }
+                        else
+                        {
+                            MessageBox.Show("Error al actualizar la contraseña. Verifique que el email exista.");
+                        }
+                    }
+                    else
+                    {
+                        MessageBox.Show("Código inválido. No se actualizó la contraseña.");
+                    }
+                }
             }
         }
-
 
         private bool ActualizarContraseña(string email, string newPassword)
         {

@@ -59,13 +59,14 @@ namespace MiAplicacion
             if (RegistrarUsuario(username, email, password))
             {
                 MessageBox.Show("Usuario registrado con éxito.");
-                this.Close();
+                this.Close(); // Solo cierra este formulario
             }
             else
             {
                 MessageBox.Show("Error al registrar el usuario.");
             }
         }
+
 
 
         private bool ValidarEmail(string email)
