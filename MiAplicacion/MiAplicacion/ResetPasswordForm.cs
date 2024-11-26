@@ -1,14 +1,19 @@
 ﻿using System;
 using System.Data.OleDb;
 using System.Windows.Forms;
+using static System.Runtime.CompilerServices.RuntimeHelpers;
 
 namespace MiAplicacion
 {
     public partial class ResetPasswordForm : Form
     {
-        public ResetPasswordForm()
+        private string cadenaConexion;
+
+        public ResetPasswordForm(string conexion)
         {
             InitializeComponent();
+            cadenaConexion = conexion;
+            txtCode.Enabled = false;
         }
 
         private void btnResetPassword_Click(object sender, EventArgs e)
@@ -48,7 +53,7 @@ namespace MiAplicacion
         {
             try
             {
-                using (OleDbConnection cnn = new OleDbConnection("ConnectionString"))
+                using (OleDbConnection cnn = new OleDbConnection(cadenaConexion))
                 {
                     cnn.Open();
                     string query = "UPDATE Usuarios SET Contraseña = @Password WHERE Email = @Email";

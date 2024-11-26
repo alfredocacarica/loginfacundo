@@ -1,14 +1,18 @@
-﻿using System.Data.OleDb;
+﻿using System;
+using System.Data.OleDb;
 using System.Windows.Forms;
-using System;
 
 namespace MiAplicacion
 {
     public partial class LoginForm : Form
     {
+        private string cadenaConexion;
+
         public LoginForm()
         {
             InitializeComponent();
+            // Construir la cadena de conexión usando |DataDirectory|
+            cadenaConexion = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=|DataDirectory|\login.accdb";
         }
 
         private void btnLogin_Click(object sender, EventArgs e)
@@ -39,7 +43,7 @@ namespace MiAplicacion
         {
             try
             {
-                using (OleDbConnection cnn = new OleDbConnection("ConnectionString"))
+                using (OleDbConnection cnn = new OleDbConnection(cadenaConexion))
                 {
                     cnn.Open();
                     string query = "SELECT COUNT(1) FROM Usuarios WHERE Email = @Email AND Contraseña = @Password";
@@ -61,8 +65,8 @@ namespace MiAplicacion
 
         private void linkForgotPassword_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            // Abrir el formulario ResetPasswordForm
-            ResetPasswordForm resetForm = new ResetPasswordForm();
+            // Abrir el formulario ResetPasswordForm pasando la cadena de conexión
+            ResetPasswordForm resetForm = new ResetPasswordForm(cadenaConexion);
             resetForm.Show();
         }
     }
