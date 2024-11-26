@@ -59,7 +59,9 @@ namespace MiAplicacion
             if (RegistrarUsuario(username, email, password))
             {
                 MessageBox.Show("Usuario registrado con éxito.");
-                this.Close(); // Solo cierra este formulario
+                LoginForm loginForm = new LoginForm();
+                loginForm.Show();
+                this.Hide();
             }
             else
             {
