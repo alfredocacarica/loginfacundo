@@ -10,6 +10,10 @@
         private System.Windows.Forms.Label lblUsername;
         private System.Windows.Forms.Label lblEmail;
         private System.Windows.Forms.Label lblPassword;
+        private System.Windows.Forms.LinkLabel linkLogin;
+        private System.Windows.Forms.TextBox txtConfirmPassword;
+        private System.Windows.Forms.Label lblConfirmPassword;
+
 
         protected override void Dispose(bool disposing)
         {
@@ -50,6 +54,28 @@
             this.txtPassword.Size = new System.Drawing.Size(200, 20);
             this.txtPassword.TabIndex = 2;
 
+            // lblConfirmPassword
+            this.lblConfirmPassword = new System.Windows.Forms.Label();
+            this.lblConfirmPassword.AutoSize = true;
+            this.lblConfirmPassword.Location = new System.Drawing.Point(40, 153); // Ajusta la posición según sea necesario
+            this.lblConfirmPassword.Name = "lblConfirmPassword";
+            this.lblConfirmPassword.Size = new System.Drawing.Size(108, 13);
+            this.lblConfirmPassword.TabIndex = 7;
+            this.lblConfirmPassword.Text = "Confirmar Contraseña:";
+
+            // txtConfirmPassword
+            this.txtConfirmPassword = new System.Windows.Forms.TextBox();
+            this.txtConfirmPassword.Location = new System.Drawing.Point(120, 150);
+            this.txtConfirmPassword.Name = "txtConfirmPassword";
+            this.txtConfirmPassword.PasswordChar = '*';
+            this.txtConfirmPassword.Size = new System.Drawing.Size(200, 20);
+            this.txtConfirmPassword.TabIndex = 3;
+
+            // Añadir controles al formulario
+            this.Controls.Add(this.lblConfirmPassword);
+            this.Controls.Add(this.txtConfirmPassword);
+
+
             // btnRegister
             this.btnRegister.Location = new System.Drawing.Point(160, 150);
             this.btnRegister.Name = "btnRegister";
@@ -82,6 +108,21 @@
             this.lblPassword.Size = new System.Drawing.Size(56, 13);
             this.lblPassword.TabIndex = 6;
             this.lblPassword.Text = "Password:";
+
+            // linkLogin
+            this.linkLogin = new System.Windows.Forms.LinkLabel();
+            this.linkLogin.AutoSize = true;
+            this.linkLogin.Location = new System.Drawing.Point(160, 190); // Ajusta la posición según sea necesario
+            this.linkLogin.Name = "linkLogin";
+            this.linkLogin.Size = new System.Drawing.Size(150, 13);
+            this.linkLogin.TabIndex = 4;
+            this.linkLogin.TabStop = true;
+            this.linkLogin.Text = "¿Ya tienes una cuenta? Inicia Sesión";
+            this.linkLogin.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLogin_LinkClicked);
+
+            // Añadir a los controles del formulario
+            this.Controls.Add(this.linkLogin);
+
 
             // RegisterForm
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);

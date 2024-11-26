@@ -8,6 +8,8 @@
         private System.Windows.Forms.Button btnResetPassword;
         private System.Windows.Forms.Label lblEmail;
         private System.Windows.Forms.Label lblNewPassword;
+        private System.Windows.Forms.TextBox txtConfirmNewPassword;
+        private System.Windows.Forms.Label lblConfirmNewPassword;
 
         protected override void Dispose(bool disposing)
         {
@@ -48,6 +50,28 @@
             this.btnResetPassword.Text = "Resetear Contraseña";
             this.btnResetPassword.UseVisualStyleBackColor = true;
             this.btnResetPassword.Click += new System.EventHandler(this.btnResetPassword_Click);
+
+            // lblConfirmNewPassword
+            this.lblConfirmNewPassword = new System.Windows.Forms.Label();
+            this.lblConfirmNewPassword.AutoSize = true;
+            this.lblConfirmNewPassword.Location = new System.Drawing.Point(40, 103); // Ajusta la posición según sea necesario
+            this.lblConfirmNewPassword.Name = "lblConfirmNewPassword";
+            this.lblConfirmNewPassword.Size = new System.Drawing.Size(108, 13);
+            this.lblConfirmNewPassword.TabIndex = 6;
+            this.lblConfirmNewPassword.Text = "Confirmar Nueva Contraseña:";
+
+            // txtConfirmNewPassword
+            this.txtConfirmNewPassword = new System.Windows.Forms.TextBox();
+            this.txtConfirmNewPassword.Location = new System.Drawing.Point(120, 100);
+            this.txtConfirmNewPassword.Name = "txtConfirmNewPassword";
+            this.txtConfirmNewPassword.PasswordChar = '*';
+            this.txtConfirmNewPassword.Size = new System.Drawing.Size(200, 20);
+            this.txtConfirmNewPassword.TabIndex = 3;
+
+            // Añadir controles al formulario
+            this.Controls.Add(this.lblConfirmNewPassword);
+            this.Controls.Add(this.txtConfirmNewPassword);
+
 
             // lblEmail
             this.lblEmail.AutoSize = true;

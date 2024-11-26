@@ -15,11 +15,19 @@ namespace MiAplicacion
         {
             string email = txtEmail.Text;
             string newPassword = txtNewPassword.Text;
+            string confirmNewPassword = txtConfirmNewPassword.Text;
 
             // Validar campos vacíos
-            if (string.IsNullOrEmpty(email) || string.IsNullOrEmpty(newPassword))
+            if (string.IsNullOrEmpty(email) || string.IsNullOrEmpty(newPassword) || string.IsNullOrEmpty(confirmNewPassword))
             {
                 MessageBox.Show("Por favor, complete todos los campos.");
+                return;
+            }
+
+            // Validar que las contraseñas coincidan
+            if (newPassword != confirmNewPassword)
+            {
+                MessageBox.Show("Las contraseñas no coinciden. Por favor, inténtelo de nuevo.");
                 return;
             }
 
@@ -34,6 +42,7 @@ namespace MiAplicacion
                 MessageBox.Show("Error al actualizar la contraseña. Verifique que el email exista.");
             }
         }
+
 
         private bool ActualizarContraseña(string email, string newPassword)
         {
